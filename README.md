@@ -1,1 +1,2 @@
 # LeetCoder_75
+LeetCode is a platform where users can practice coding skills by solving coding challenges. The platform offers a wide range of coding problems that cover various topics such as algorithms, data structures, database design, system design, and more. Users can solve the coding problems in various programming languages and can also discuss the solutions with the community. LeetCode is popular among software engineers who are preparing for technical interviews, as the coding problems on the platform are similar to those asked in interviews at top tech companies
