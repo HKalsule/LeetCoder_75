@@ -1,0 +1,25 @@
+// PROBLEM 06
+Given two 0-indexed integer arrays nums1 and nums2, 
+return a list answer of size 2 where:
+answer[0] is a list of all distinct integers in nums1 which are not present in nums2.
+answer[1] is a list of all distinct integers in nums2 which are not present in nums1.
+Note that the integers in the lists may be returned in any order.
+
+
+class Solution {
+public:
+    vector<vector<int>> findDifference(vector<int>& A, vector<int>& B) 
+    {
+        unordered_set<int> sa(begin(A), end(A)), sb(begin(B), end(B));
+        vector<vector<int>> ans(2);
+        for (int n : sa) 
+        {
+            if (sb.count(n) == 0) ans[0].push_back(n);
+        }
+        for (int n : sb) 
+        {
+            if (sa.count(n) == 0) ans[1].push_back(n);
+        }
+        return ans;
+    }
+};
